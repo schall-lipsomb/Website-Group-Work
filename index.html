@@ -14,9 +14,24 @@
 		position: absolute;
 		left: 0;
 	}
+	
+	.column {
+		float: left;
+		width: 50%
+	}
+	
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
 </style>
 </head>
 <body>
+	<div class="row">
+		<div class="column">HI</div>
+		<div class="column">HI</div>
+	</div>
 <nav>
     Home Application Guide Meet With Us Tracker Tool
 </nav>>
