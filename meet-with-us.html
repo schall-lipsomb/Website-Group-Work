@@ -19,6 +19,17 @@
       font-size: large;
     }
 
+    footer {
+		display: flex;
+		justify-content: center;
+		position: relative;        
+	  }   
+
+	.left-align {
+		position: absolute;
+		left: 0;
+    }
+
     a {
       color: #f8f6f5;
       text-decoration: none;
@@ -32,6 +43,7 @@
         color: black;
         font-style: bold;
         text-align: center;
+        border: 20px white;
     }
 
     nav  {
@@ -46,9 +58,10 @@
     
     .box {
       background: #b65f3a;
-      padding: 0.5rem 0.25;
-      border-radius: 5px;
-      font-size: .5em
+      padding: 0;
+      border-radius: 3px;
+      font-size: .5em;
+      line-height: 1.2;
     }
 
     .workshops {
@@ -64,8 +77,8 @@
     }
 
     .workshops ul {
-        color: blanchedalmond;
-        font-size: 1.25em;
+        color: rgb(244, 250, 250);
+        font-size: 1.15em;
     }
 
     h2 {
@@ -81,28 +94,27 @@
 </head>
 <body>
 
-  
   <header>
-    <a href="index.html"><h1>AppTrack College Solutions<h1></a>
+    <a href="index.html"><h1>AppTrack College Solutions</h1></a>
     <nav>
     <div class="navigation">
     <a href="index.html" class="box">
-        <h3>Home</h3>
+        <h1>Home</h1>
       </a>
       <a href="about-us.html" class="box">
-        <h3>About Us</h3>
+        <h1>About Us</h1>
       </a>
       <a href="app-guide.html" class="box">
-        <h3>Application Guide</h3>
+        <h1>Application Guide</h1>
       </a>
-        <a href="meet-with-us.html" class="box"><h3>Schedule a Meeting</h3>
+        <a href="meet-with-us.html" class="box"><h1>Schedule a Meeting</h1>
       </a>
       <a href="tracker-tool.html" class="box">
-        <h3>Tracker Tool</h3>
+        <h1>Tracker Tool</h1>
       </a>
     </nav>
     <div class="title">
-    Meet With Us
+    <h1>Meet With Us</h1>
     </div>
   </header>
 
@@ -125,20 +137,50 @@
         <input type="text" name="Name" id="Name" placeholder="Enter your name"><br>
         <label for="Email">Email:</label>
         <input type="email" name="Email" id="Email" placeholder="Enter your email"><br><br>
-<strong>Which webinar would you like to sign-up for?</strong><br>
-<input type="radio" name="Webinar" id="Webinar" value="Transitioning Into College Life w/ Samuel Hall"> Transitioning Into College Life w/ Samuel Hall<br>
-<input type="radio" name="Webinar" id="Webinar" value="Time Management w/ Carlos Zaragoza-Valdez"> Time Management w/ Carlos Zaragoza-Valdez<br>
-<input type="radio" name="Webinar" id="Webinar" value="Acing Your Entrance Exam w/ Zachary Davis"> Acing Your Entrance Exam w/ Zachary Davis<br><br>
-<strong>Are you a Parent or Student?</strong><br>
-<input type="radio" name="Status" id="Status" value="Parent"> Parent<br>
-<input type="radio" name="Status" id="Status" value="Student"> Student<br><br>
-<strong>Ask a question to be answered on the webinar:</strong><br>
-<textarea name="Question" id="Question" cols="60" rows="3" placeholder="What question do you want answered by our experts?"></textarea><br>
-<input type="submit" id="submit" value="Submit">
-<input type="reset">
-</form></div>
+        <strong>Which webinar would you like to sign-up for?</strong><br>
+        <input type="radio" name="Webinar" id="Webinar" value="Transitioning Into College Life w/ Samuel Hall"> Transitioning Into College Life w/ Samuel Hall<br>
+        <input type="radio" name="Webinar" id="Webinar" value="Time Management w/ Carlos Zaragoza-Valdez"> Time Management w/ Carlos Zaragoza-Valdez<br>
+        <input type="radio" name="Webinar" id="Webinar" value="Acing Your Entrance Exam w/ Zachary Davis"> Acing Your Entrance Exam w/ Zachary Davis<br><br>
+        <strong>Are you a Parent or Student?</strong><br>
+        <input type="radio" name="Status" id="Status" value="Parent"> Parent<br>
+        <input type="radio" name="Status" id="Status" value="Student"> Student<br><br>
+        <strong>Ask a question to be answered on the webinar:</strong><br>
+        <textarea name="Question" id="Question" cols="60" rows="3" placeholder="What question do you want answered by our experts?"></textarea><br>
+        <input type="submit" id="submit" value="Submit">
+        <input type="reset"> 
+        </form></div></div>
     <h2>Consultations</h2>
+    <div class="workshops">
+<p>AppTrack offers world-class, one-on-one consultation services for every step of the College Application process.
+  Please fill out our interest form and one of our representatives will reach out to you!</p>
+        </div>
+    <h2>Consultation Sign-Up</h2>
+    <div class="workshops">
+        <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+        <label for="Name">Full Name:</label>
+        <input type="text" name="Name" id="Name" placeholder="Enter your name"><br>
+        <label for="Email">Email:</label>
+        <input type="email" name="Email" id="Email" placeholder="Enter your email"><br><br>
+        <strong>Are you a Parent or Student?</strong><br>
+        <input type="radio" name="Status" id="Status" value="Parent"> Parent<br>
+        <input type="radio" name="Status" id="Status" value="Student"> Student<br><br>
+        <strong>What year of school is the student?</strong><br>
+        <input type="radio" name="Year" id="Year" value="Pre-High School"> Pre-High School<br>
+        <input type="radio" name="Year" id="Year" value="High School - Freshman/Sophomore"> High School - Freshman/Sophomore<br>
+        <input type="radio" name="Year" id="Year" value="High School - Junior/Senior"> High School - Junior/Senior<br>
+        <input type="radio" name="Year" id="Year" value="High School Graduate"> High School Graduate<br>
+        <input type="radio" name="Year" id="Year" value="Current College Student"> Current College Student<br><br>
+        <strong>Ask a question to be answered on the webinar:</strong><br>
+        <textarea name="Question" id="Question" cols="60" rows="3" placeholder="What question do you want answered by our experts?"></textarea><br>
+        <input type="submit" id="submit" value="Submit">
+        <input type="reset"> 
+        </form></div></div>
+    </div>
+      </section>
 
-        </section>
+  <footer>
+      <small class="left-align"><i>Copyright &copy; Apptrack College Solutions</i></small>
+      <small><i><a href="">apptrackcollegesolutions.net</a></i></small>
+  </footer>
 </body>
 </html>
