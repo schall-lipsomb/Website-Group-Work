@@ -53,10 +53,55 @@
         font-style: bold;
         text-align: center;
     }
-
+	
+	h2 {
+		text-align: center;
+		background-color: #e6ad95;
+	}
+	
+	h3 {
+		color: black;
+	}
+	
     nav  {
         padding: 2rem;
     }
+	
+	.tool-info {
+		background: #e48314;
+		border-radius: 5px;
+		padding: 2rem;
+	}
+	
+	.app-checklist {
+		background: #e48314;
+		border-radius: 5px;
+		padding: 2rem;
+	}
+	
+	.deadline-info {
+		background: #e48314;
+		border-radius: 5px;
+		padding: 2rem;
+	}
+	
+	.deadline-info ul {
+		color: black;
+		text-align: left;
+	}
+	
+	.ai-element {
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+		background-color: black;
+		color: #ad6018;
+		padding: 15px 25px;
+		border: none;
+		border-radius 5px;
+		cursor: pointer;
+	}
+	
   </style>
 </head>
 <body>
@@ -84,3 +129,129 @@
     <h1>Tracker Tool</h1>
     </div>
   </header>
+	
+	<section id="app-checklist">
+	
+		<h2> Tracking Tool </h2>
+	
+		<div class="tool-info">
+			
+			<label for="status">Current status of application:</label>
+			
+			<select id="status" name="status">
+			
+				<option value="">Please choose an option</option>
+				<option value="not sent">Not Sent</option>
+				<option value="in progress">In Progress</option>
+				<option value="accepted">Accepted</option>
+				<option value="rejected">Rejected</option><br>
+			
+			</select>
+			
+			<br>
+			
+			<label id="test-policy">Testing Policy:</label>
+			
+			<select id="test-policy" name="test-policy">
+			
+				<option value="">Please choose an option</option>
+				<option value="required">Required</option>
+				<option value="optional">Optional</option>
+				<option value="not accepted">Not Accepted</option><br>
+			
+			</select>
+			
+			<br>
+			
+			<label id="rec-progress">Letters of Recommendation:</label>
+			
+			<select id="rec-progress" name="rec-letters">
+			
+				<option value="">Please Choose an option</option>
+				<option value="Written">Written</option>
+				<option value="in-progress">Waiting on it</option>
+				<option value="not-started">Not Started</option><br>
+			
+			</select>
+			
+			<br>
+			
+			<label id="personal-essay">Personal Essay:</label>
+			
+			<select id="personal-essay" name="personal-essay">
+			
+				<option value="">Please Choose an Option</option>
+				<option value="complete">Written</option>
+				<option value="drafting">In progress</option>
+				<option value="not-started">Not started</option><br>
+			
+			</select>
+			
+			<br>
+			
+			<button type="submit">Submit</button>
+			
+		</div>
+
+		<h2> Application Checklist </h2>
+	
+		<div class="app-checklist">
+		
+			<fieldset>
+		
+				<input type="checkbox" id="transcript" name="transcript" value="transcript">
+				<label for="transcript"> Transcipts sent? </label><br>
+			
+				<input type="checkbox" id="recommendation" name="recommendation" value="recommendation">
+				<label for="recommendation"> Recommendations sent? </label><br>
+			
+				<input type="checkbox" id="act" name="act" value="act">
+				<label for="act"> ACT/SAT sent to applicable colleges? </label><br>
+			
+				<input type="checkbox" id="essay" name="essay" value="essay">
+				<label for="essay"> Essays written and sent? </label><br>
+			
+				<input type="checkbox" id="resume" name="resume" value="resume">
+				<label for="resume"> Resume created and sent? </label><br>
+				
+				<button type="submit">Submit</button>
+				
+			</fieldset>
+			
+		</div>
+	
+		<h2> Upcoming Deadlines </h2>
+	
+		<div class="deadline-info">
+	
+		<h3><b>Lipscomb University</b></h3>
+		
+			<ul>
+			
+				<li> August 1st - Application Opens </li>
+				
+				<li> December 1st - FAFSA Opens </li>
+				
+				<li> December 1st - Pirority Application & Scholarship Deadline </li>
+				
+				<li> March 1st - Regular Scholarship Deadline </li>
+				
+				<li> May 1st - Lipscomb Decision Day </li>
+				
+				<li> August 1st - Enrollment Finalization </li>
+				
+			</ul>
+	
+		</div>
+		
+	</section>
+
+	<footer>
+	
+      <small class="left-align"><i>Copyright &copy; Apptrack College Solutions</i></small>
+	  
+      <small><i><a href="">apptrackcollegesolutions.net</a></i></small>
+	  
+	</footer>
+	
+	<button class="ai-element">Need Assistance?</button>
